@@ -33,11 +33,26 @@ a {
 
 #site-navigation
 {
-    display:table-cell;
-    vertical-align:middle;
-    padding:100px 0;
-    text-align:center
-}
-    
 
-            
+    background-color: transparent;
+    overflow: hidden; 
+} 
+
+#site-navigation {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+#site-navigation > ul > li
+{
+    display: inline;
+    float: left;
+} 
+
+a:hover
+{
+    display: block;
+    padding: 10%;
+    background-color: red;
+}
