@@ -4,9 +4,8 @@
     padding: 0;  
 }
 
-html, body {
-    width: 100vw;
-    height: fit-content;
+html {
+    height: 100vh;
 }
 
 /* General typography */
@@ -26,18 +25,15 @@ h6 {}
 p {}
 a {}
 
+
 /* Menu. */
 
 header {
-    position: -webkit-sticky;
-    position: sticky;
-    z-index: 1000;
     height: fit-content;
-    top: 0;
+    background: white;
 }
 
 #header-container {
-    background: white;
     align-items: center;
     justify-content: space-between;
 }
@@ -86,60 +82,159 @@ header a {
     color:#d60404;
 }
 
-/* Body container. */
+/* Main container. */
 
-#body-container {
-    align-items: center;
-    justify-content: space-evenly;
+.parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 95vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+}
+
+.parallax-group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.parallax-group:nth-child(1) {
+    z-index: 1;
+    background: red;
+}
+
+.parallax-group:nth-child(2) {
+    z-index: 2;
+    background: pink;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.parallax-layer > img {
+    position: absolute;
+}
+
+#main-container {
+    overflow-y: auto;
+    height: fit-content;
 }
 
 #intro {
-    grid-template-columns: 8fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 8fr;
-    grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100vw;
-    height: 100vh;
-    -webkit-perspective: 100px;
-    perspective: 100px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background-attachment: fixed;
+    justify-content: space-evenly;  
+    width: 84%;
+    margin-left: 8%;
+    height: 95vh;
 }
 
 #welcome {
-    grid-column: 2 / span 14;
-    grid-row: 1 / span 10;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+
 }
 
-.image {
-    background-image: url("http://htms45.bayoustadt.com/media/IMGP3505-transparent-low.png");
-    background-size: cover;
-    background-repeat: no-repeat; 
-    
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 4;
-    z-index: -1;
+#contact {    
+    align-items: center;
+    justify-content: space-evenly;
 }
-#image-2 {
-    
+   
+
+.parallax-layer:nth-child(1) {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
 }
 
-#image-3 {
-    
+.parallax-layer:nth-child(1) > img  {
+    height: 8vh;
+    left: 0%;
+    top: 16%;
 }
 
+.parallax-layer:nth-child(2) {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+}
+
+.parallax-layer:nth-child(2) > img  {
+    height: 8vh;
+    right: 0%;
+    top: 16%;    
+}
+
+.parallax-layer:nth-child(3) {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+}
+
+.parallax-layer:nth-child(3) > img  {
+    height: 8vh;
+    left: 0%;
+    top: 32%;    
+}
+
+.parallax-layer:nth-child(4) {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+
+}
+
+.parallax-layer:nth-child(4) > img  {
+    height: 8vh;
+    right: 0%;
+    top: 32%;    
+}
+
+.parallax-layer:nth-child(5) {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+}
+
+.parallax-layer:nth-child(5) > img  {
+    height: 8vh;
+    left: 0%;
+    top: 50%;    
+}
+
+.parallax-layer:nth-child(6) {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+
+}
+
+.parallax-layer:nth-child(6) > img  {
+    height: 8vh;
+    right: 0%;
+    top: 50%;    
+}
 
 @media all and (max-width : 600px) {
     #intro {
-        height: 100vh;
+        height: 90vh;
     }    
 
+    .parallax-layer > img {
+        visibility: hidden;
+    }
 }
+
+/* Body container. */
+
+body {
+    overflow-x: hidden;
+    height: fit-content;
+}
+
+      
 
 /* About Us. */
 
@@ -147,6 +242,7 @@ header a {
     width:100%;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 100;
 
 }
 

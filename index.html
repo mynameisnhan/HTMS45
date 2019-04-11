@@ -9,64 +9,111 @@
         <title>Hủ Tíu Mì S.45</title>   
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+
+    <header> 
+        <div id="header-container" class="rows"> <!-- flex-rows -->
+            <div id="header-logo">
+                <h1><a href="index.html"> Hủ Tíu Mì S.45</a></h1>
+            </div>
     
-    <body class="cols"> <!-- flex-columns -->
+            <nav>
+                <ul class="rows">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>   
+
+    <style>
+
+            /* Parallax base styles
+            --------------------------------------------- */
+ 
         
-        <script src="./index.js"></script>
-        <header> 
-        <!-- header -->
+          
+        
+          </style>
 
-            <div id="header-container" class="rows"> <!-- flex-rows -->
-            <!-- header-container -->  
-                <div id="header-logo">
-                <!-- logo -->
-                    <h1><a href="index.html"> Hủ Tíu Mì S.45</a></h1>
-                </div>
-
-                <nav>
-                    <ul class="rows">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="./menu.html">Menu</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-
-                </nav>
+        
+    <div class="parallax">
+        <div class="parallax-group">
+            <div class="parallax-layer"> 
+                <img src="http://htms45.com/media/IMGP3505-transparent-low.png">
+            </div>
+            
+            <div class="parallax-layer">
+                <img src="http://htms45.com/media/IMGP3513-transparent-low.png">
+            </div>
+                        
+            <div class="parallax-layer">
+                <img src="http://htms45.com/media/IMGP3513-transparent-low.png">
+            </div>
+            
+           <div class="parallax-layer">
+                <img src="http://htms45.com/media/IMGP3513-transparent-low.png">
             </div>
 
-        </header>
+            <div class="parallax-layer">
+                    <img src="http://htms45.com/media/IMGP3513-transparent-low.png">
+            </div>
 
+            <div class="parallax-layer">
+                    <img src="http://htms45.com/media/IMGP3513-transparent-low.png">
+            </div>
 
-        <div id="body-container" class="cols"> <!-- flex-columns-->
-            <div id="intro" class ="grid">
-                <img class="image">
+            <div class="parallax-layer" id="main-container">
                 
-                <div id="welcome" class="cols">
-                    <h2>Authentic Vietnamese Cuisine</h2>
-                    <h3>Est. 2015</h3>
-                    
-                    <div id="contact" class="rows">
-
+                <div id="intro" class="cols"> <!-- grid, parallax -->
+                            <!--<div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            <div class="parallax-layer"> <img src="http://htms45.com/media/IMGP3505-transparent-low.png"></div>
+                            -->
+                    <div id="welcome">
+                        <h2>Authentic Vietnamese Cuisine</h2>
+                        <h3>Est. 2015</h3>
                     </div>
-                </div>
-            </div>            
+    
+                    <div id="contact" class="rows">
+                        <h2>Address</h2>
+                        <h2>Phone</h2>
+                        <h2>Phone</h2>
+                                
+                    </div>
+                </div>    
+            </div>        
+        </div>    
 
-            <div id="about-us" class="rows">
-            <!-- Container: main: About Us. -->
+        <body class="parallax-group">
+            <div id="about-us" class="rows"> <!-- flex-rows -->
                 <div id="about-us-text">
                     <h1>About Us</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec consectetur purus, eu laoreet magna. Proin aliquet gravida rutrum. In hac habitasse platea dictumst. In elementum neque et ex porttitor, ac finibus velit efficitur. Quisque odio ex, condimentum eget ornare tempus, volutpat sed odio. Nullam non finibus est, vel tempor est. Ut non ipsum ut neque fermentum mattis sit amet vel nulla. Praesent ornare odio ex, ut semper arcu aliquet at. Phasellus sodales dictum semper. Nunc laoreet porta ante. Donec magna neque, bibendum ac auctor a, egestas vitae justo. Pellentesque interdum tristique tincidunt.</p>      
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec consectetur purus, eu laoreet magna. Proin aliquet gravida rutrum. In hac habitasse platea dictumst. In elementum neque et ex porttitor, ac finibus velit efficitur. Quisque odio ex, condimentum eget ornare tempus, volutpat sed odio. Nullam non finibus est, vel tempor est. Ut non ipsum ut neque fermentum mattis sit amet vel nulla. Praesent ornare odio ex, ut semper arcu aliquet at. Phasellus sodales dictum semper. Nunc laoreet porta ante. Donec magna neque, bibendum ac auctor a, egestas vitae justo. Pellentesque interdum tristique tincidunt.</p>      
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec consectetur purus, eu laoreet magna. Proin aliquet gravida rutrum. In hac habitasse platea dictumst. In elementum neque et ex porttitor, ac finibus velit efficitur. Quisque odio ex, condimentum eget ornare tempus, volutpat sed odio. Nullam non finibus est, vel tempor est. Ut non ipsum ut neque fermentum mattis sit amet vel nulla. Praesent ornare odio ex, ut semper arcu aliquet at. Phasellus sodales dictum semper. Nunc laoreet porta ante. Donec magna neque, bibendum ac auctor a, egestas vitae justo. Pellentesque interdum tristique tincidunt.</p>      
                 </div>
-                    
+                            
                 <div id="about-us-photo">
-                        sdfsf
+                    sdfsf
                 </div>                  
-                                                
+                                                        
             </div>
-    
-            <div id="top-items" class="rows">
-                <!-- Container: main: Top Items. -->
+        
+            <div id="top-items" class="rows"> <!-- flex-rows -->
                 <h1>Top Items</h1>
                 <ol>item 1 (en)<br>item 1 (vn)</ol>
                 <ol>item 2 (en)<br>item 2 (vn)</ol>
@@ -74,11 +121,13 @@
                 <ol>item 4 (en)<br>item 4 (vn)</ol>
                 <a href="./menu.html">See full menu.</a>
             </div>
-        </div>
-            
-    </body>
 
-    <footer>
-            <div class="footer-container"><p>Lorem ipsum dolor sit amet</p></div>
-    </footer>
+            <footer>
+                <div class="footer-container"><p>Lorem ipsum dolor sit amet</p></div>
+            </footer>
+        </body>
+
+    </div>
+        
+
 </html>
